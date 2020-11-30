@@ -1,1 +1,1 @@
-# video-chat-app
+# chat-app
