@@ -1,0 +1,47 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+    height: 100vh;
+    background-color: white;
+    font-size: 1rem;
+}
+.chat__header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    background-color: #f5f5f5;
+}
+.chat__header > h4 {
+    font-weight: 500;
+    color: gray;
+}
+.chat__name {
+    color: black;
+}
+.chat__input {
+    display: flex;
+    align-items: center;    
+    padding: 0.5rem;
+    border-top: 1px solid lightgray;
+    background-color: #f5f5f5;
+}
+.chat__input > form {
+    flex: 1;
+}
+.chat__input > form > input {
+    width: 95%;
+    border: 1px solid lightgray;
+    outline-width: 0;
+    font-size: 1rem;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+}
+/* hide the submit button to mimic imessage ux */
+.chat__input > form > button {
+    display: none;
+}
+.chat__messages {
+    flex: 1;
+}
