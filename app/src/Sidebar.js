@@ -2,6 +2,7 @@ import React from 'react';
 import { Avatar, IconButton } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import RateReviewOutlinedIcon from '@material-ui/icons/RateReviewOutlined';
+import SidebarChat from './SidebarChat';
 import './Sidebar.css';
 
 function Sidebar() {
@@ -19,6 +20,38 @@ function Sidebar() {
             </div>
             <div className="sidebar__chats">
              {/* individual chats */}
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
+             <SidebarChat />
             </div>
         </div>
     )

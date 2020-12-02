@@ -9,8 +9,8 @@
 .sidebar__header {
     display: flex;
     align-items: center;
-    padding: 0.75rem;
-    height: 4.5rem;
+    padding: 0.5rem;
+    height: 4rem;
 }
 .sidebar__avatar {
     cursor: pointer;
@@ -29,4 +29,21 @@
     border: none;
     background: transparent;
     outline-width: 0;
+}
+.sidebar__chats {
+    padding: 0.5rem;
+    /* the easiest way to make 
+    sidebar chats scrollable */
+    overflow: scroll;
+}
+
+/* hide sidebar__chats scrollbar */
+/* Chrome, Safari, Opera */
+.sidebar__chats::-webkit-scrollbar {
+    display: none;
+}
+/* IE, Edge, Firefox */
+.sidebar__chats {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
 }
