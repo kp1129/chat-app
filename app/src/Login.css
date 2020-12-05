@@ -5,15 +5,15 @@
     /* width: 100%; */
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 .login__logo > img {
     object-fit: contain;
-    height: 20rem;
+    height: 15rem;
 }
 .login > button {
-    width: 20rem;
+    width: 15rem;
     background-color: #3ea4fb;
     color: #eff2f5;
     font-weight: 600;
