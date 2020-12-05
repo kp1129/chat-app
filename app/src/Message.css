@@ -1,0 +1,27 @@
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position relative because of 
+    position absolute contents inside it */
+    position: relative;
+    /* set the bubble to be only
+    as wide as it needs to be */
+    width: fit-content;
+    margin: 1rem;
+}
+.message > p {
+    background-color: #f3f3f5;
+    /* font-size: medium; */
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 0.75rem;
+    margin-right: auto;
+}
+.message > small {
+    color: gray;
+    position: absolute;
+    right: 0;
+    bottom: -0.5rem;
+    font-size: 0.5rem;
+}
