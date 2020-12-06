@@ -24,7 +24,7 @@ function Chat() {
         .orderBy("timestamp", "desc")
         .onSnapshot((snapshot) => {
           setMessages(
-            snapshot.docs.map((doc) => ({
+            snapshot.docs.reverse().map((doc) => ({
               id: doc.id,
               data: doc.data(),
             }))
@@ -37,7 +37,7 @@ function Chat() {
     e.preventDefault();
 
     db.collection('chats').doc(chatId).collection('messages').add({
-      // timezone-mindful timestamp
+      // timezone-consistent timestamp
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       // message
       message: userInput,
@@ -63,7 +63,7 @@ function Chat() {
         </h4>
         <strong>Details</strong>
       </div>
-
+      
       {/* messages */}
       <div className="chat__messages">
         {messages.map(({ id, data }) => (

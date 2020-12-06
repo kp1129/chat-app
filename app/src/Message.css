@@ -25,3 +25,17 @@
     bottom: -0.5rem;
     font-size: 0.5rem;
 }
+.message__sender {
+    margin-left: auto;
+}
+.message__photo {
+    order: 0;
+}
+.message__sender > .message__photo {
+    order: 1;
+    margin: 1rem;
+}
+.message__sender > p {
+    background-color: #3cabfa;
+    color: white;
+}

@@ -19,6 +19,7 @@
     position: relative;
 }
 .sidebarChat__info > small {
+    font-size: 0.75rem;
     position: absolute;
     right: 0;
     top: 0.25rem;
