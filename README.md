@@ -9,8 +9,11 @@ A chat app inspired by iMessage!
 - Redux
 - Material UI
 - Firebase
+- Vercel
 
 ## Features
 - Google sign in
 - Add new channels
 - Send and receive messages from other users in real time
+
+Deployed on Vercel
