@@ -4,13 +4,22 @@ import SearchIcon from "@material-ui/icons/Search";
 import RateReviewOutlinedIcon from "@material-ui/icons/RateReviewOutlined";
 import SidebarChat from "./SidebarChat";
 import "./Sidebar.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
+import { setChat } from './features/chatSlice';
 import db, { auth } from "./firebase";
 
 function Sidebar() {
+  const dispatch = useDispatch();
   const user = useSelector(selectUser);
+ 
   const [chats, setChats] = useState([]);
+
+  useEffect(() => {
+    if (chats.length > 0) {
+      dispatch(setChat({ chatId: chats[0].id, chatName: chats[0].data.chatName }))
+    }
+  }, [chats.length])
 
   useEffect(() => {
     db.collection('chats').onSnapshot((snapshot) => {

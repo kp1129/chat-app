@@ -31,7 +31,9 @@ function SidebarChat({ id, chatName }) {
         <h3>{chatName}</h3>
         <p>{chatInfo[0]?.message}</p>
         <small>
-          {new Date(chatInfo[0]?.timestamp?.toDate()).toLocaleString()}
+          {chatInfo[0]
+            ? new Date(chatInfo[0]?.timestamp?.toDate()).toLocaleString()
+            : new Date().toLocaleString()}
         </small>
       </div>
     </div>
