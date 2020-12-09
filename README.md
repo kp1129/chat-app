@@ -8,6 +8,7 @@ A chat app inspired by iMessage!
 - React
 - Redux
 - Material UI
+- CSS
 - Firebase
 - Vercel
 
