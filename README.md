@@ -9,7 +9,8 @@ A chat app inspired by iMessage!
 - Redux
 - Material UI
 - CSS
-- Firebase
+- Firebase (user auth)
+- Firestore (realtime database)
 - Vercel
 
 ## Features
