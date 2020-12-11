@@ -4,7 +4,7 @@ A chat app inspired by iMessage!
 
 [VIEW LIVE DEMO](https://chat-app-psi.vercel.app/)
 
-## Built with:
+## Stack:
 - React
 - Redux
 - Material UI
